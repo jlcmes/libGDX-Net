@@ -7,14 +7,14 @@ Can be used too in Java applications to provide Websocket support creating Webso
 Here you can watch a Demo of a prototype using libGDXNet:
 http://www.youtube.com/watch?v=DpluzKKMNtI
 
-This project has been made as a part of my Final Degree Project "Design and coding of a collaborative multiplatform system with workspace" (in Spanish: "Diseño e implementación de un sistema colaborativo multidispositivo con espacio de trabajo compartido") of the University of Castilla La-Mancha (Spain).
+This project has been made as a part of my Final Degree Project "Design and coding of a collaborative multiplatform system with workspace" (in Spanish: "Diseï¿½o e implementaciï¿½n de un sistema colaborativo multidispositivo con espacio de trabajo compartido") of the University of Castilla La-Mancha (Spain).
 
 This project uses the next libraries:
 http://code.google.com/p/gwt-ws/
 https://github.com/TooTallNate/Java-WebSocket
 Thanks to the authors of this libraries.
 
-Thanks to my teacher, Victor Manuel López Jaquero for his support.
+Thanks to my teacher, Victor Manuel Lï¿½pez Jaquero for his support.
 
 How to use it
 =============
@@ -44,6 +44,6 @@ I modified too the Entry class in all the versions to inform all the classes the
 
 All the code is documented. Read it before asking anything, please.
 
-Is my first project on GitHub, it will have a lot of errors. Please don't kill.
+Is my first project on GitHub, it will have a lot of errors. Please don't kill me for that.
 
 Thanks.
