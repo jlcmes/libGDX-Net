@@ -12,7 +12,9 @@ Visit http://www.esiiab.uclm.es/ for more details.
 
 This project uses the next libraries:
 http://code.google.com/p/gwt-ws/
+
 https://github.com/TooTallNate/Java-WebSocket
+
 Thanks to the authors of this libraries.
 
 Thanks to my teacher, Victor Manuel López Jaquero for his support.
