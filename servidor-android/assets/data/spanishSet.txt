@@ -1,0 +1,284 @@
+spanishSet.jpg
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+carta
+  rotate: false
+  xy: 0, 0
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 0
+carta
+  rotate: false
+  xy: 0, 373
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 1
+carta
+  rotate: false
+  xy: 0, 746
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 2
+carta
+  rotate: false
+  xy: 0, 1119
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 3
+carta
+  rotate: false
+  xy: 0, 1492
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 4
+carta
+  rotate: false
+  xy: 0, 1865
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 5
+carta
+  rotate: false
+  xy: 0, 2238
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 6
+carta
+  rotate: false
+  xy: 0, 2611
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 7
+carta
+  rotate: false
+  xy: 0, 2984
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 8
+carta
+  rotate: false
+  xy: 0, 3357
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 9
+carta
+  rotate: false
+  xy: 245, 0
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 10
+carta
+  rotate: false
+  xy: 245, 373
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 11
+carta
+  rotate: false
+  xy: 245, 746
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 12
+carta
+  rotate: false
+  xy: 245, 1119
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 13
+carta
+  rotate: false
+  xy: 245, 1492
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 14
+carta
+  rotate: false
+  xy: 245, 1865
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 15
+carta
+  rotate: false
+  xy: 245, 2238
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 16  
+carta
+  rotate: false
+  xy: 245, 2611
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 17
+carta
+  rotate: false
+  xy: 245, 2984
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 18
+carta
+  rotate: false
+  xy: 245, 3357
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 19  
+carta
+  rotate: false
+  xy: 490, 0
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 20
+carta
+  rotate: false
+  xy: 490, 373
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 21  
+carta
+  rotate: false
+  xy: 490, 746
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 22  
+carta
+  rotate: false
+  xy: 490, 1119
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 23  
+carta
+  rotate: false
+  xy: 490, 1492
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 24  
+carta
+  rotate: false
+  xy: 490, 1865
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 25  
+carta
+  rotate: false
+  xy: 490, 2238
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 26
+carta
+  rotate: false
+  xy: 490, 2611
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 27
+carta
+  rotate: false
+  xy: 490, 2984
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 28
+carta
+  rotate: false
+  xy: 490, 3357
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 29   
+carta
+  rotate: false
+  xy: 735, 0
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 30
+carta
+  rotate: false
+  xy: 735, 373
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 31
+carta
+  rotate: false
+  xy: 735, 746
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 32
+carta
+  rotate: false
+  xy: 735, 1119
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 33
+carta
+  rotate: false
+  xy: 735, 1492
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 34
+carta
+  rotate: false
+  xy: 735, 1865
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 35
+carta
+  rotate: false
+  xy: 735, 2238
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 36
+carta
+  rotate: false
+  xy: 735, 2611
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 37
+carta
+  rotate: false
+  xy: 735, 2984
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 38
+carta
+  rotate: false
+  xy: 735, 3357
+  size: 245, 373
+  orig: 245, 373
+  offset: 0, 0
+  index: 39

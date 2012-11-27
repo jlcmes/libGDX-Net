@@ -1,0 +1,4 @@
+d:war/
+d:data
+i:data/cartajoker.png
+i:data/libgdx.png

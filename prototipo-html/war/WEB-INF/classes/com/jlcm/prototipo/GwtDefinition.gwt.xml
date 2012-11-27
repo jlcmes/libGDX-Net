@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit trunk//EN" "http://google-web-toolkit.googlecode.com/svn/trunk/distro-source/core/src/gwt-module.dtd">
+<module>
+	<inherits name='com.badlogic.gdx.backends.gdx_backends_gwt' />
+	<inherits name="net.zschech.gwt.websockets.WebSockets" />
+	<inherits name='Client' />
+	<entry-point class='com.jlcm.prototipo.client.GwtLauncher' />
+	<set-configuration-property name="gdx.assetpath" value="../prototipo-android/assets" />
+</module>
