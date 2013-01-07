@@ -24,7 +24,7 @@ Try it yourself! (in 2 minutes)
 
 1. Download the Server for desktop from here: https://googledrive.com/host/0B2aidpXTzgAKTGEwUDBmcXlsTEk/pro/servidor.jar
 2. Run the server on your PC.
-3. Run the Client directly from: https://googledrive.com/host/0B2aidpXTzgAKTGEwUDBmcXlsTEk/ or download it from: https://googledrive.com/host/0B2aidpXTzgAKTGEwUDBmcXlsTEk/pro/cliente.jar 
+3. Run the Client downloading it from: https://googledrive.com/host/0B2aidpXTzgAKTGEwUDBmcXlsTEk/pro/cliente.jar 
 4. Move the Card!
 
 How to use it
