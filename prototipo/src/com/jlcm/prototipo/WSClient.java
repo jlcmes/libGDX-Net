@@ -9,7 +9,6 @@ import org.java_websocket.handshake.ServerHandshake;
 
 public class WSClient implements ComClient 
 {	
-	//private static int DEFAULT_SERVER_PORT = 80;
 	private int port;
 	private WebSocketClient wsc; //Websocket
 	private boolean connected;
@@ -18,9 +17,6 @@ public class WSClient implements ComClient
 	private int myID;
 	private ClientMSG c;
 	
-	//For WSClient only
-	//JAVAClient.platformCode platform; //Not used
-	
 	//For Bidirectional Communication mode
 	public WSClient (String ip, int port, ClientMSG c, JAVAClient.platformCode pC)
 	{
@@ -28,7 +24,6 @@ public class WSClient implements ComClient
 		connected = false;
 		this.connectClient(ip);
 		myID = -1;
-		//platform = pC; //To save the code of the platform (ANDROID-DESKTOP)
 		this.c = c; //To call the methods of the the upper level class
 	}
 	
@@ -39,7 +34,7 @@ public class WSClient implements ComClient
 			//Websocket implementation
 			URI url = null; //URI (url address of the server)
 			try {
-				url = new URI("ws://"+ ip +":"+ port); //We create the URI of the server.
+				url = new URI("ws://"+ ip +":"+ port); //We create the URI of the server. Use a port upper than 1024 on Android and Linux!
 			} catch (URISyntaxException e) {
 				e.printStackTrace();
 			} 
@@ -51,8 +46,6 @@ public class WSClient implements ComClient
 
 				@Override
 				public void onOpen( ServerHandshake handshake ) {
-					
-					//sendMsg()
 					connected = true;
 					requestID();
 				}
@@ -121,7 +114,6 @@ public class WSClient implements ComClient
 	
 	public void close()
 	{
-		//wsc.send("MSG_CLOSE_WS "+myID); //NotYetConnectedException
 		wsc.close();
 		connected = false;
 	}
