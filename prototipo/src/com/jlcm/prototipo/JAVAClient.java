@@ -10,6 +10,12 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector3;
 
+/**
+ * Main Desktop/Android/HTML5 class
+ * 
+ * @author JOSE LUIS CEBRIAN MARQUEZ
+ *
+ */
 public class JAVAClient implements ApplicationListener {
 	private OrthographicCamera camera;
 	private SpriteBatch batch;
@@ -31,7 +37,7 @@ public class JAVAClient implements ApplicationListener {
 		super();
 		
 		//Here we must create the client connection to the server
-		clientMSG = new ClientMSG("127.0.0.1", 8080, this, pC);
+		clientMSG = new ClientMSG("127.0.0.1", 8080, this, pC); //Change here the IP and Port for your Server IP and Port
 		myID = clientMSG.getId();
 	}
 	
@@ -50,7 +56,6 @@ public class JAVAClient implements ApplicationListener {
 		
 		//LETS CREATE THE IMAGE THAT YOU CAN MOVE OVER THE SCREEN
 		texture = new Texture(Gdx.files.internal("data/cartajoker.png"));
-		//texture.setFilter(TextureFilter.Linear, TextureFilter.Linear); //Use Texture Filter (may be slow).
 		
 		TextureRegion region = new TextureRegion(texture, 0, 0, spWidth, spHeight); //must have the same size of the image size
 		sprite = new Sprite(region);
@@ -59,6 +64,9 @@ public class JAVAClient implements ApplicationListener {
 
 	}
 
+	/**
+	 * Dispose method close the WebSocket and dispose all the graphic resources
+	 */
 	@Override
 	public void dispose() {
 		batch.dispose();
@@ -86,7 +94,7 @@ public class JAVAClient implements ApplicationListener {
 			x_card = (int)touch.x;
 			y_card = (int)touch.y;
 								
-			if ((Math.abs(last_x - touch.x) >= 3) || (Math.abs(last_y - touch.y) >= 3))	//To avoid send packets with no movement
+			if ((Math.abs(last_x - touch.x) >= 3) || (Math.abs(last_y - touch.y) >= 3))	//To avoid send packets with the same value
 			{
 				clientMSG.sendMessage("POSITION "+clientMSG.getId()+" "+(int)touch.x+" "+(int)touch.y);
 				last_x = (int)touch.x;
@@ -96,7 +104,7 @@ public class JAVAClient implements ApplicationListener {
 		
 		sprite.setPosition(x_card - (spWidth/2), y_card - (spHeight/2)); //The center of the card in the touch point
 
-		camera.update(); //Is a good practice to update the camera in every frame, but the response time is worse
+		camera.update(); 
 	}
 
 	@Override
@@ -111,7 +119,9 @@ public class JAVAClient implements ApplicationListener {
 	public void resume() {
 	}
 	
-	//Method called by the ClientMSG (bidirectional) when server moves the card
+	/*
+	* Method called by the ClientMSG (bidirectional) when server moves the card
+	*/
 	public void changePosition(int PlayerId, int x, int y)
 	{
 		x_card = x;
