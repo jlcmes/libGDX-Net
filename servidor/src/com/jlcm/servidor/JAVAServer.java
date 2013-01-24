@@ -8,7 +8,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-//import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector3;
 
@@ -20,8 +19,8 @@ public class JAVAServer implements ApplicationListener {
 
 	static final int spWidth = 128;
 	static final int spHeight = 256;
-	private int x_card = 0, y_card = 0; //Used to send the coordinates of card position
-	private int last_x = 0, last_y = 0; //Used to store the last sent coordinates
+	private int x_card = 0, y_card = 0; //To send the coordinates of card position
+	private int last_x = 0, last_y = 0; //To store the last sent coordinates
 	
 	ServerMSG serverMSG;
 	
@@ -31,7 +30,7 @@ public class JAVAServer implements ApplicationListener {
 	{
 		super();
 		
-		serverMSG = new ServerMSG(8080, this, pC);
+		serverMSG = new ServerMSG(8080, this, pC); //Don't use a port lower than 1024 on Android and Linux!
 	}
 	
 	@Override
@@ -39,21 +38,18 @@ public class JAVAServer implements ApplicationListener {
 		float w = Gdx.graphics.getWidth();	//Save the Width and Height to use it after
 		float h = Gdx.graphics.getHeight();
 		
-		//camera = new OrthographicCamera(1, h/w); //Old method to create the camera  instead of the next two lines		
-
 		//IMPORTANT
 		// THE 0,0 POINT OF MY GAME IS THE LEFT BOTTOM CORNER, EVERY OBJECTS WILL USE THIS SYSTEM OF REFERENCE
 		//
 		camera = new OrthographicCamera(w, h); //Create the camera and put his position on the real 0,0
 		camera.position.x = w/2;
 		camera.position.y = h/2;
-		camera.update(); //Is necessary to update the camera when you change his position!
+		camera.update();
 		
 		batch = new SpriteBatch(); 
 		
 		//LETS CREATE THE IMAGE THAT YOU CAN MOVE OVER THE SCREEN
 		texture = new Texture(Gdx.files.internal("data/cartajoker.png"));
-		texture.setFilter(TextureFilter.Linear, TextureFilter.Linear); //Use Texture Filter (may be slow).
 		TextureRegion region = new TextureRegion(texture, 0, 0, 128, 256); //spWidth, spHeight); //must have the same size of the image size
 		sprite = new Sprite(region);
 	}
@@ -84,7 +80,7 @@ public class JAVAServer implements ApplicationListener {
 			x_card = (int)touch.x;
 			y_card = (int)touch.y;
 			
-			if ((Math.abs(last_x - touch.x) >= 3) || (Math.abs(last_y - touch.y) >= 3))	//To avoid send packets with no movement
+			if ((Math.abs(last_x - touch.x) >= 3) || (Math.abs(last_y - touch.y) >= 3))	//Only send new values when the position is updated
 			{
 				serverMSG.sendMessageToAll("POSITION -1 "+(int)touch.x+" "+(int)touch.y);
 				last_x = (int)touch.x;
